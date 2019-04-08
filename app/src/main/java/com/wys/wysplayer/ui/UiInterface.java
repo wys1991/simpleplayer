@@ -8,9 +8,9 @@ package com.wys.wysplayer.ui;
 public interface UiInterface {
     public int getLayout();
 
-    public int initView();
+    public void initView();
 
-    public int initData();
+    public void initData();
 
-    public int initListener();
+    public void initListener();
 }

@@ -22,7 +22,10 @@ public abstract class BaseFragment extends Fragment implements UiInterface {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mView = inflater.inflate(getLayout(), container);
+        mView = inflater.inflate(getLayout(), null);
+        initView();
+        initData();
+        initListener();
         return mView;
     }
 
