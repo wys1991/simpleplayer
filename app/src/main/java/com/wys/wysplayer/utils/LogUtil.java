@@ -8,23 +8,23 @@ import android.util.Log;
  * Emial : 424126544@qq.com
  */
 public class LogUtil {
-    private Boolean isLog = true;
+    private static Boolean isLog = true;
 
-    public void LogR(String TAG, String msg) {
+    public static void LogR(String TAG, String msg) {
         if (isLog) {
             Log.e(TAG, msg);
         }
 
     }
 
-    public void LogI(String TAG, String msg) {
+    public static void LogI(String TAG, String msg) {
         if (isLog) {
             Log.i(TAG, msg);
         }
 
     }
 
-    public void LogV(String TAG, String msg) {
+    public static void LogV(String TAG, String msg) {
         if (isLog) {
             Log.v(TAG, msg);
         }

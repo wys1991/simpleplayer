@@ -1,5 +1,7 @@
 package com.wys.wysplayer.ui.activity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
@@ -15,8 +17,14 @@ public abstract class BaseActivity extends FragmentActivity implements UiInterfa
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(getLayout());
         initView();
         initData();
         initListener();
+    }
+
+    public void startActivity(Activity a,Class clazz){
+        Intent i=new Intent(a,clazz);
+        startActivity(i);
     }
 }

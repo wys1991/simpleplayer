@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/btn_audio_play_pressed"
+        android:id="@+id/item_iv"
+        android:layout_marginBottom="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="小飞侠-英雄无敌"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/item_tv_title"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="1:50:36"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/item_tv_duration"
+        android:layout_below="@+id/item_tv_title"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/item_tv_size"
+        android:text="2.35GB"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        />
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_iv"
+        android:background="@color/colorPrimaryDark"
+        />
+
+</RelativeLayout>
