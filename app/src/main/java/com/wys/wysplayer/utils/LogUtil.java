@@ -10,7 +10,7 @@ import android.util.Log;
 public class LogUtil {
     private static Boolean isLog = true;
 
-    public static void LogR(String TAG, String msg) {
+    public static void LogE(String TAG, String msg) {
         if (isLog) {
             Log.e(TAG, msg);
         }

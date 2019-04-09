@@ -1,5 +1,6 @@
 package com.wys.wysplayer.ui.activity;
 
+import android.Manifest;
 import android.os.Handler;
 import android.os.Message;
 
@@ -29,6 +30,7 @@ public class SplashActivity extends BaseActivity {
     @Override
     public void initData() {
         LogUtil.LogI(TAG, "initData");
+//        requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.INTERNET}, 1);
         Handler handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
@@ -44,4 +46,6 @@ public class SplashActivity extends BaseActivity {
     public void initListener() {
         LogUtil.LogI(TAG, "initListener");
     }
+
+
 }

@@ -3,14 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
   >
-    <!--<include layout="@layout/layout_listview"/>-->
-    <TextView
-        android:id="@+id/tv_vedio"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:gravity="center_horizontal"
-        android:text="视频"
-        android:textColor="@android:color/white"
-        android:textSize="30dp" />
+    <include layout="@layout/layout_listview"/>
+
 </LinearLayout>
